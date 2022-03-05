@@ -15,7 +15,7 @@ function Organicos() {
       
                   headers:{
                     'accept': "*/*",
-                    'Authorization': 'Bearer d9dca8b8-c6b6-3c55-968e-39951a498750',
+                    'Authorization': '',
                   },
                   method:'GET'
               })
