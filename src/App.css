@@ -1,78 +1,81 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
 
-:root{
-    --color1: green;
-    --color2 : yellow;
+:root {
+  --color1: green;
+  --color2: yellow;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 20px 30px;
-    
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px 30px;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.btn{
-    background: rgb(1, 138, 74);
-    height: 40px;
-    width: 150px;
-    margin-top: 50px;
-    border-radius: 8px;
-    border: none;
+.btn {
+  background: rgb(1, 138, 74);
+  height: 40px;
+  width: 150px;
+  margin-top: 50px;
+  border-radius: 8px;
+  border: none;
 }
 
-.btn:hover{
-    background: rgb(0, 116, 62);
+.btn:hover {
+  background: rgb(0, 116, 62);
 }
 
-
-
-
-.cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    flex-direction: column;
-    gap: 20px;
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.card{
-    padding: 10px 20px;
-    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-    background-color: #fff;
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-.card:hover{
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+@media screen and (max-width: 425px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
 
-.card h3{
-    color: rgba(131, 185, 134, 0.986);
+.card {
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-.card p{
-    color: #000;
+.card:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
+.card h3 {
+  color: rgba(131, 185, 134, 0.986);
+}
 
-
-
-
-
-
+.card p {
+  color: #000;
+}
