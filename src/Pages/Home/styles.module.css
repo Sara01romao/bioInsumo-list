@@ -1,0 +1,33 @@
+.content{
+   padding: 30px 20px;
+   border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+}
+
+.titulos {
+  color: rgb(1, 161, 81);
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.titulos::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: rgb(0, 153, 107);
+  position: absolute;
+  right: 0;
+}
+
+.link {
+  display: block;
+  font-size: 1rem;
+  height: 40px;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 12px;
+  color: #fff;
+  font-weight: bold;
+}

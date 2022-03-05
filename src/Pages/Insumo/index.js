@@ -16,7 +16,7 @@ const Insumo = () => {
     
                 headers:{
                   'accept': "*/*",
-                  'Authorization': '',
+                  'Authorization': 'Authorization: Bearer 1b841577-8108-3bd2-aa38-9e6d93929a1f',
                 },
                 method:'GET'
             })

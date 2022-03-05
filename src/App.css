@@ -20,8 +20,7 @@ body{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border: 1px solid red;
+    gap: 50px;
     padding: 20px 30px;
     
 }
@@ -30,11 +29,25 @@ a{
     text-decoration: none;
 }
 
+.btn{
+    background: rgb(1, 138, 74);
+    height: 40px;
+    width: 150px;
+    margin-top: 50px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn:hover{
+    background: rgb(0, 116, 62);
+}
+
+
 
 
 .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     flex-direction: column;
     gap: 20px;
 }
@@ -42,6 +55,7 @@ a{
 .card{
     padding: 10px 20px;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    background-color: #fff;
 }
 
 .card:hover{
@@ -49,7 +63,7 @@ a{
 }
 
 .card h3{
-    color: rgb(0, 145, 0);
+    color: rgba(131, 185, 134, 0.986);
 }
 
 .card p{
