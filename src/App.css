@@ -5,6 +5,60 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid red;
+    padding: 20px 30px;
 }
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    
+}
+
+nav ul a{
+    color: #000;
+}
+
+
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card{
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.card:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.card h3{
+    color: rgb(0, 145, 0);
+}
+
+.card p{
+    color: #000;
+}
+
+
+
+
+
 
 

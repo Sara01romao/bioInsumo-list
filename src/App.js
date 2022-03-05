@@ -1,17 +1,10 @@
 import React from 'react';
 import './App.css'
-
-import Organicos from './Components/Organicos';
+import Rotas from './router';
 
 function App() {
   return (
-    <div className='container'>
-        <h1>BioInsumos</h1>
-      
-    <Organicos/>
-       
-        
-    </div>
+    <Rotas/>
   )
 }
 
