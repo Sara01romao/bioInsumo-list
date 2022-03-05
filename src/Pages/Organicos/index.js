@@ -20,7 +20,6 @@ function Organicos() {
                   method:'GET'
               })
               const json = await response.json();
-              console.log(json)
               
               setInsumo(json.data)
           }
@@ -41,7 +40,6 @@ function Organicos() {
             return(
                 <Link to={`/insumo/${organico.registroMapa}`} key={organico.registroMapa} className="card">
                 <h3>{organico.marcaComercial}</h3>
-                <p>{organico.ingredienteAtivo}</p>
                 <p>{organico.classes}</p>
                 </Link>
             )

@@ -11,7 +11,7 @@ const Home =() => {
             
 
             <section className='content'>
-                <h2>Orgânico</h2>
+                <h2>home</h2>
 
             </section>
         

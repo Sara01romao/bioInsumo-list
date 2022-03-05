@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {useParams} from 'react-router-dom';
 
 
@@ -6,6 +6,8 @@ const Insumo = () => {
     const {id} = useParams();
 
     const [insumo, setInsumo] = useState([]);
+    const [pragas, setPragas] = useState([]);
+   
  
     useEffect(()=>{
         async function agroApi(){
@@ -22,6 +24,8 @@ const Insumo = () => {
             console.log(json)
             
             setInsumo(json.data)
+            setPragas(json.data.pragas)
+
         }
 
         agroApi()
@@ -29,7 +33,7 @@ const Insumo = () => {
 
     },[id])
     
-   
+    
     
 
   return(
@@ -41,12 +45,12 @@ const Insumo = () => {
           <p><span>Classe: </span>{insumo.classes}</p>
           <p><span>Classificação Ambiental: </span>{insumo.classificacaoAmbiental}</p>
           <p><span>Aprovado Para Agricultura Organica: </span>{insumo.aprovadoParaAgriculturaOrganica? "Aprovado": "Recusado"}</p>
-          
+          <a href={insumo.url}>Mais infomações</a>
 
         
         <div className='infoPragas'>
             <h3>Pragas</h3>
-           
+            {pragas.map((praga) => (<p key={praga.nomeComum}>{praga.nomeComum}</p>))}
            
         </div>
          

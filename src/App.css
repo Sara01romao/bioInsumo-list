@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
 
 .container{
     max-width: 1200px;
@@ -7,6 +12,7 @@
     align-items: center;
     border: 1px solid red;
     padding: 20px 30px;
+    
 }
 
 a{
@@ -17,19 +23,32 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px;
 }
 
 nav ul{
+    margin-top: 30px;
     list-style: none;
     display: flex;
+    justify-content: space-between;
     gap: 30px;
+    border: 1px solid red;
+   
     
 }
 
 nav ul a{
-    color: #000;
+    color: rgb(119, 119, 119);
+    font-weight: bold;
+   
 }
 
+.logo{
+    font-size: 3rem;
+    color:green;
+    font-weight: 700;
+   
+}
 
 
 .cards{
