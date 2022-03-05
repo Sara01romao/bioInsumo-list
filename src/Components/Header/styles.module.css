@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.logo {
+  font-size: 3rem;
+  color: green;
+  font-weight: 700;
+
+  background: -webkit-linear-gradient(rgb(17, 209, 17), rgb(8, 145, 163));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+.header ul {
+  margin-top: 30px;
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.link {
+  color: rgb(119, 119, 119);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  border-width: 0%;
+  transition: border 0.3s ease;
+  text-align: center;
+}
+
+.header :global(.active),
+.link:hover {
+  color: rgb(34, 34, 34);
+  border-bottom: 3px solid rgba(16, 145, 12, 0.671);
+  border-width: 100%;
+}

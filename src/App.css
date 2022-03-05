@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
 
+:root{
+    --color1: green;
+    --color2 : yellow;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -19,36 +30,6 @@ a{
     text-decoration: none;
 }
 
-nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-}
-
-nav ul{
-    margin-top: 30px;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    border: 1px solid red;
-   
-    
-}
-
-nav ul a{
-    color: rgb(119, 119, 119);
-    font-weight: bold;
-   
-}
-
-.logo{
-    font-size: 3rem;
-    color:green;
-    font-weight: 700;
-   
-}
 
 
 .cards{
