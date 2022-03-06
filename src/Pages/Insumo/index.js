@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
+import styles from './styles.module.css'
 import {useParams} from 'react-router-dom';
 
 
@@ -16,7 +17,7 @@ const Insumo = () => {
     
                 headers:{
                   'accept': "*/*",
-                  'Authorization': 'Authorization: Bearer 1b841577-8108-3bd2-aa38-9e6d93929a1f',
+                  'Authorization': '',
                 },
                 method:'GET'
             })
@@ -38,22 +39,36 @@ const Insumo = () => {
 
   return(
       <div className='container'>
-          <h1>{insumo.marcaComercial}</h1>
-          <p>{insumo.ingredienteAtivo}</p>
 
-          <h4>Informações Técnicas</h4>
-          <p><span>Classe: </span>{insumo.classes}</p>
-          <p><span>Classificação Ambiental: </span>{insumo.classificacaoAmbiental}</p>
-          <p><span>Aprovado Para Agricultura Organica: </span>{insumo.aprovadoParaAgriculturaOrganica? "Aprovado": "Recusado"}</p>
-          <a href={insumo.url}>Mais infomações</a>
-
-        
-        <div className='infoPragas'>
+          <div className={styles.content}>
+              <div>
+                <h1>{insumo.marcaComercial}</h1>
+                <p>{insumo.ingredienteAtivo}</p>
+              </div>
+              
+              <div className={styles.txt}>
+                <h3>Informações Técnicas</h3>
+                <p><span>Classe: </span>{insumo.classes}</p>
+                <p><span>Classificação Ambiental: </span>{insumo.classificacaoAmbiental}</p>
+                <p><span>Agricultura Organica: </span>{insumo.aprovadoParaAgriculturaOrganica? "Aprovado": "Recusado"}</p>
+                <a href={insumo.url} target="_blank" rel="noreferrer noopener" className={styles.link}>Mais infomações</a>
+              </div>
+            
             <h3>Pragas</h3>
-            {pragas.map((praga) => (<p key={praga.nomeComum}>{praga.nomeComum}</p>))}
-           
-        </div>
+            <div className={styles.infoPragas}>
+                
+                {pragas.map((praga) => (
+                  <div key={praga.nomeCientifico} className={styles.itemPraga}>
+                    <p className={styles.nome}>{praga.nomeComum}</p>
+                   <p>Nome Cientifico:  <span>{praga.nomeCientifico}</span></p>
+                  </div>
+                  
+                ))}
+              
+            </div>
          
+          </div>
+          
           
           
       </div>
