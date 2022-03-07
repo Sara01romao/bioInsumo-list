@@ -17,7 +17,7 @@ const Insumo = () => {
     
                 headers:{
                   'accept': "*/*",
-                  'Authorization': '',
+                  'Authorization': 'Bearer 9629bdfc-5dba-333d-ad73-f22a6ffc0639',
                 },
                 method:'GET'
             })
@@ -33,7 +33,7 @@ const Insumo = () => {
 
 
     },[id])
-    
+    console.log(pragas.length)
     
     
 
@@ -50,11 +50,11 @@ const Insumo = () => {
                 <h3>Informações Técnicas</h3>
                 <p><span>Classe: </span>{insumo.classes}</p>
                 <p><span>Classificação Ambiental: </span>{insumo.classificacaoAmbiental}</p>
-                <p><span>Agricultura Organica: </span>{insumo.aprovadoParaAgriculturaOrganica? "Aprovado": "Recusado"}</p>
+                <p><span>Agricultura Orgânica: </span>{insumo.aprovadoParaAgriculturaOrganica? "Aprovado": "Recusado"}</p>
                 <a href={insumo.url} target="_blank" rel="noreferrer noopener" className={styles.link}>Mais infomações</a>
               </div>
             
-            <h3>Pragas</h3>
+            <h3>{pragas.length === 1 ? 'Praga' : 'Pragas'}</h3>
             <div className={styles.infoPragas}>
                 
                 {pragas.map((praga) => (
