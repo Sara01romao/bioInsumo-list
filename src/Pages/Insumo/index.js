@@ -22,8 +22,7 @@ const Insumo = () => {
                 method:'GET'
             })
             const json = await response.json();
-            console.log(json)
-            
+           
             setInsumo(json.data)
             setPragas(json.data.pragas)
 
@@ -33,7 +32,7 @@ const Insumo = () => {
 
 
     },[id])
-    console.log(pragas.length)
+    
     
     
 

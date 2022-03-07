@@ -1,12 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-// import { Container } from './styles';
+
 
 const CardsHome =({insumosList, organico}) => {
     const organicos = insumosList.filter((insumo)=> insumo.aprovadoParaAgriculturaOrganica === organico);
     const insumos = organicos.filter((item, index) => (index < 9));
-    console.log(insumos, 'lista')
+   
   return(
       <>
          <div  className='cards'>

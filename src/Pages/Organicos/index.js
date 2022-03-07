@@ -15,7 +15,7 @@ function Organicos() {
       
                   headers:{
                     'accept': "*/*",
-                    'Authorization': '',
+                    'Authorization': 'B',
                   },
                   method:'GET'
               })
@@ -30,7 +30,6 @@ function Organicos() {
      const organicos = insumos.filter((insumo)=> insumo.aprovadoParaAgriculturaOrganica !==false);
      
      
-    console.log(organicos)
 
   return(
     <section className='container'>

@@ -5,29 +5,9 @@ import CardsHome from '../../Components/CardsHome';
 import { Link } from 'react-router-dom';
 
 
-// import { Container } from './styles';
+
 
 const Home =() => {
-
-  const item = [
-    {
-      registroMapa: 317,
-      marcaComercial: "Terra",
-      classes: "microBio"
-    },
-
-    {
-      registroMapa: 318,
-      marcaComercial: "Terra",
-      classes: "microBio"
-    },
-
-    {
-      registroMapa: 319,
-      marcaComercial: "Terra",
-      classes: "microBio"
-    },
-]
 
   const [insumos, setInsumo] = useState([])
 
@@ -53,11 +33,9 @@ const Home =() => {
 
   return (
         <div className='container'>
-            
-            
 
             <section className={styles.content}>
-               <h2 className={styles.titulos}>Convensional</h2>
+               <h2 className={styles.titulos}>Convencionais</h2>
                 <CardsHome insumosList={insumos} organico={false}/>
 
                 <button className='btn'>
