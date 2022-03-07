@@ -24,6 +24,20 @@ body {
   padding: 20px 30px;
 }
 
+.title{
+  color: rgb(1, 161, 81);;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: rgb(0, 153, 107);
+  position: absolute;
+  right: 0;
+}
+
 a {
   text-decoration: none;
 }

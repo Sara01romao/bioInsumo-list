@@ -27,8 +27,8 @@ const Convencional = () => {
  
 
 return(
-  <section className='content'>
-    <h2>Para agricultura Convencional</h2>
+  <section className='container'>
+    <h2 className='title'> Convencionais</h2>
       <div  className='cards'>
           {convencionais.map((convencional) =>{
           return(

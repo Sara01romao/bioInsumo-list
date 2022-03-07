@@ -33,8 +33,9 @@ function Organicos() {
     console.log(organicos)
 
   return(
-    <section className='content'>
-      <h2>Orgânico</h2>
+    <section className='container'>
+
+      <h2 className='title'>Orgânicos</h2>
         <div  className='cards'>
             {organicos.map((organico) =>{
             return(
