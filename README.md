@@ -8,8 +8,8 @@
 
 ## 💻  Sobre o Projeto
 
-O projeto fornece uma lista de bio insumos usados na agricultura com informações técnicas sobre os produtos, além disso um link para site agrofit para mais detalhes do insumo. 
-No desenvolvimento foi usado a API BioInsumo disponível na AgroApi da Embrapa.
+O projeto fornece uma lista de bio insumos usados na agricultura com informações técnicas sobre os produtos, além disso um link para site agrofit para mais detalhes. 
+No desenvolvimento foi usado a API BioInsumo disponível no site AgroApi da Embrapa.
 <br>
 
 
