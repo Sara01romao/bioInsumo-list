@@ -9,6 +9,7 @@ const Header = () => {
     <nav className={styles.header}>
         <Link to="/" className={styles.logo}>BioInsumos</Link>
         <ul>
+            <li><NavLink to="/" end className={`${styles.link} , ${styles.linkHome}`}>Home</NavLink></li>
             <li><NavLink to="/convencional" className={styles.link}>Agricultura Convencional</NavLink></li>
             <li><NavLink to="/organico" className={styles.link}>Agricultura Orgânica</NavLink></li>
         </ul>

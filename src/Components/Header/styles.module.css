@@ -22,7 +22,8 @@
   list-style: none;
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
 }
 
 .link {
@@ -34,6 +35,7 @@
   border-width: 0%;
   transition: border 0.3s ease;
   text-align: center;
+  
 }
 
 .header :global(.active),
@@ -41,4 +43,32 @@
   color: rgb(34, 34, 34);
   border-bottom: 3px solid rgba(16, 145, 12, 0.671);
   border-width: 100%;
+}
+
+
+@media screen and (max-width: 425px) {
+
+  .header ul {
+    margin-top: 30px;
+    list-style: none;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  .link{
+    font-size: 1rem;
+    padding-bottom: 10px;
+    height: 50px;
+    max-width: 150px;
+   
+   
+  }
+
+  .linkHome{
+    padding: 10px;
+  }
+
+  
 }
